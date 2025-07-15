@@ -45,3 +45,36 @@ p{
     line-height: 1.5;
     background-color: whitesmoke;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    height: 400px;
+}
+
+.gira-duas-vezes {
+    display: inline-block;
+    animation: girar 1s linear 2 forwards;
+    transform-origin: center center;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
